@@ -16,12 +16,19 @@ End Function
 
 字符串分割与拼接
 ```
+方式一、
 Function Z(a)
 AA = Left(a, 4):
 bb = Mid(a, 5, 2):
 cc = Right(a, 2):
 Z = AA & "-" & bb & "-" & cc:
 End Function
+
+方式二、
+Function F(a)
+F = Format(a, "####-##-##")
+End Function
+
 
 示例：20181212  => 2018-12-12
 ```
